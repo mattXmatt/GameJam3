@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0difdve707tc"]
+[gd_scene load_steps=4 format=3 uid="uid://c0difdve707tc"]
 
+[ext_resource type="Script" path="res://scene/map.gd" id="1_u6gbn"]
 [ext_resource type="Texture2D" uid="uid://cv212l6bq58nn" path="res://sprite/map/map.png" id="1_xanlu"]
 [ext_resource type="PackedScene" uid="uid://be20osbaoi71v" path="res://scene/main_character_scene.tscn" id="2_i207h"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_u6gbn")
 
 [node name="map" type="Sprite2D" parent="."]
 position = Vector2(-132, -2198)
