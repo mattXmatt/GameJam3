@@ -1,9 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://be20osbaoi71v"]
+[gd_scene load_steps=5 format=3 uid="uid://be20osbaoi71v"]
 
 [ext_resource type="Script" path="res://script/main_character_scene.gd" id="1_1whpk"]
 [ext_resource type="PackedScene" uid="uid://bnrad0yx42vx4" path="res://scene/player.tscn" id="2_n6wp8"]
+[ext_resource type="PackedScene" uid="uid://d2tpu8sft2mxg" path="res://scene/ennemy.tscn" id="3_ei23w"]
+[ext_resource type="Script" path="res://script/ennemy.gd" id="4_oou7e"]
 
 [node name="main_character_scene" type="Node2D"]
 script = ExtResource("1_1whpk")
 
 [node name="player" parent="." instance=ExtResource("2_n6wp8")]
+position = Vector2(571, 316)
+
+[node name="ennemy" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(250, 114)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy2" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(740, 117)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy3" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(923, 324)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy4" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(333, 429)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy5" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(63, 435)
+script = ExtResource("4_oou7e")

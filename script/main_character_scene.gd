@@ -15,13 +15,15 @@ func _process(delta):
 func shoot():
 	var angle = 0;
 	var instance = projectile.instantiate();
+	instance.SpawnPos = $player.position;
 	if ( $player/player_animation.animation == "move_right" ):
 		angle = 90;
+		instance.SpawnPos.x += 40;
 	if ( $player/player_animation.animation == "move_left" ):
 		angle = -90;
+		instance.SpawnPos.x -= 40;
 	if ( $player/player_animation.animation == "move_backward" ):
 		angle = 180;
 	instance.direction = angle * 3.14/180;
-	instance.SpawnPos = $player.position;
 	instance.SpawnRot = angle * 3.14/180;
 	main.add_child.call_deferred(instance);
