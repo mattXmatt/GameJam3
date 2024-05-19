@@ -10,23 +10,170 @@ script = ExtResource("1_1whpk")
 
 [node name="player" parent="." instance=ExtResource("2_n6wp8")]
 
-[node name="ennemy" parent="." instance=ExtResource("3_ei23w")]
-position = Vector2(250, 114)
-collision_mask = 7
+[node name="ennemy54" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(259, -1926)
 script = ExtResource("4_oou7e")
 
-[node name="ennemy2" parent="." instance=ExtResource("3_ei23w")]
-position = Vector2(740, 117)
+[node name="ennemy55" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-263, -2817)
 script = ExtResource("4_oou7e")
 
-[node name="ennemy3" parent="." instance=ExtResource("3_ei23w")]
-position = Vector2(923, 324)
+[node name="ennemy56" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-601, -1815)
 script = ExtResource("4_oou7e")
 
-[node name="ennemy4" parent="." instance=ExtResource("3_ei23w")]
-position = Vector2(333, 429)
+[node name="ennemy60" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(635, -2659)
 script = ExtResource("4_oou7e")
 
-[node name="ennemy5" parent="." instance=ExtResource("3_ei23w")]
-position = Vector2(63, 435)
+[node name="ennemy61" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(1448, -2826)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy62" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-1695, -2073)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy63" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(764, -4192)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy64" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-30, -4109)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy65" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-1544, -3470)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy66" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-846, -6098)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy67" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(57, -5468)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy68" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-2177, -4493)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy69" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(2905, -5611)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy70" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(1791, -6475)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy71" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(837, -6419)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy72" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(1744, -4967)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy73" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(2556, -3685)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy74" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(2434, -5607)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy75" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(6723, -6487)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy76" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(5929, -6404)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy77" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(3570, -9529)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy78" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(4473, -8899)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy79" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(3782, -6788)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy80" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(2795, -8211)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy81" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(6207, -9906)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy82" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(5253, -9850)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy83" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(6160, -8398)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy84" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-6194, -5353)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy85" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-1905, -6233)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy86" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-2699, -6150)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy87" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-5058, -9275)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy88" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-4155, -8645)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy89" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-4846, -6534)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy90" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-5833, -7957)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy91" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-2421, -9652)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy92" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-3375, -9596)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy93" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-2468, -8144)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy94" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(385, -8797)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy95" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(1902, -9238)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy96" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(1893, -11674)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy97" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-1254, -9016)
+script = ExtResource("4_oou7e")
+
+[node name="ennemy98" parent="." instance=ExtResource("3_ei23w")]
+position = Vector2(-1423, -11644)
 script = ExtResource("4_oou7e")
