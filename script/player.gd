@@ -35,6 +35,3 @@ func _process(delta):
 		$player_animation.stop()
 		
 	position += motion * delta;
-	position= position.clamp(Vector2.ZERO, screen_size);
-	
-
