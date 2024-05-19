@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://d2tpu8sft2mxg"]
 
-[ext_resource type="Texture2D" uid="uid://3r1r67ndiq00" path="res://momo_idle_shadow.png" id="1_ny60g"]
+[ext_resource type="Texture2D" uid="uid://coa6kits4xl1v" path="res://momo_idle_shadow.png" id="1_ny60g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ngja7"]
 atlas = ExtResource("1_ny60g")
@@ -141,6 +141,8 @@ animations = [{
 radius = 9.05539
 
 [node name="ennemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
 
 [node name="ennemy_animation" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6auc5")

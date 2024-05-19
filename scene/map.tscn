@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c0difdve707tc"]
 
-[ext_resource type="Texture2D" uid="uid://bd65v0x6aaxx3" path="res://sprite/map/map.png" id="1_xanlu"]
-[ext_resource type="PackedScene" uid="uid://bnrad0yx42vx4" path="res://scene/player.tscn" id="2_jdcd4"]
+[ext_resource type="Texture2D" uid="uid://cv212l6bq58nn" path="res://sprite/map/map.png" id="1_xanlu"]
+[ext_resource type="PackedScene" uid="uid://be20osbaoi71v" path="res://scene/main_character_scene.tscn" id="2_i207h"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,10 +9,11 @@
 position = Vector2(-132, -2198)
 texture = ExtResource("1_xanlu")
 
-[node name="player" parent="." instance=ExtResource("2_jdcd4")]
+[node name="main_character_scene" parent="." instance=ExtResource("2_i207h")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 13
+collision_layer = 8
+collision_mask = 5
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(-20, -78, -12, -75, 5, -75, 17, -77, 23, -86, 81, -84, 83, -152, 41, -215, 7, -226, -48, -194, -65, -174, -76, -135, -76, -91, -23, -86)
