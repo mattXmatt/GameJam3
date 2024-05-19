@@ -14,5 +14,5 @@ func _process(delta):
 func _on_area_2d_body_entered(body):
 	if (body.name != "player" && body.name != "ennemy"):
 		$Area2D/AnimatedSprite2D.play("on")
-		await get_tree().create_timer(2.0).timeout
+		await get_tree().create_timer(10.0).timeout
 		get_tree().quit()
