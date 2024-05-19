@@ -28,3 +28,9 @@ func shoot():
 	instance.direction = angle * 3.14/180;
 	instance.SpawnRot = angle * 3.14/180;
 	main.add_child.call_deferred(instance);
+
+
+func _on_area_2d_body_entered(body):
+	if body.name == "player":
+		await get_tree().create_timer(3.0).timeout
+		get_tree().quit(0)
