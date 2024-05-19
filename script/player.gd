@@ -35,3 +35,8 @@ func _process(delta):
 		$player_animation.stop()
 		
 	position += motion * delta;
+
+
+func _on_area_2d_body_entered(body):
+	if (body.name != "projectile"):
+		print("aie")

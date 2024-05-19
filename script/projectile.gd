@@ -13,3 +13,8 @@ func _ready():
 func _physics_process(delta):
 	velocity = Vector2(0, -Speed).rotated(direction);
 	move_and_slide()
+
+
+func _on_fire_zone_body_entered(body):
+	body.queue_free();
+	queue_free();

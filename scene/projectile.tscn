@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://8art22m6s24x"]
+[gd_scene load_steps=16 format=3 uid="uid://8art22m6s24x"]
 
 [ext_resource type="Script" path="res://script/projectile.gd" id="1_al8ux"]
 [ext_resource type="Texture2D" uid="uid://brrlh7yl6nw23" path="res://sprite/Fireball.png" id="2_wda1n"]
@@ -84,6 +84,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_pffvl"]
 radius = 5.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_aujhh"]
+radius = 6.0
+
 [node name="projectile" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 4
@@ -93,8 +96,18 @@ script = ExtResource("1_al8ux")
 texture_filter = 1
 rotation = -3.14159
 sprite_frames = SubResource("SpriteFrames_mq8ci")
-frame_progress = 0.758605
+frame_progress = 0.845227
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_pffvl")
+
+[node name="fire_zone" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="fire_range" type="CollisionShape2D" parent="fire_zone"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_aujhh")
+
+[connection signal="body_entered" from="fire_zone" to="." method="_on_fire_zone_body_entered"]

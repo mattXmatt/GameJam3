@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bnrad0yx42vx4"]
+[gd_scene load_steps=38 format=3 uid="uid://bnrad0yx42vx4"]
 
 [ext_resource type="Texture2D" uid="uid://buj8bgbjwnyc6" path="res://sprite/personage_nu_v1.png" id="1_ekioh"]
 [ext_resource type="Script" path="res://script/player.gd" id="1_wpcrm"]
@@ -251,7 +251,11 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4aei"]
-size = Vector2(20, 7.5)
+size = Vector2(20, 10.5)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_upp5k"]
+radius = 15.0
+height = 46.0
 
 [node name="player" type="CharacterBody2D"]
 texture_filter = 1
@@ -264,7 +268,7 @@ sprite_frames = SubResource("SpriteFrames_7c6x8")
 animation = &"move_forward"
 
 [node name="player_collision" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 25.75)
+position = Vector2(-1, 24.25)
 shape = SubResource("RectangleShape2D_u4aei")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -272,3 +276,12 @@ limit_left = -1213
 limit_top = -4941
 limit_right = 824
 limit_bottom = 565
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 8)
+shape = SubResource("CapsuleShape2D_upp5k")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

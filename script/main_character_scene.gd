@@ -24,6 +24,7 @@ func shoot():
 		instance.SpawnPos.x -= 40;
 	if ( $player/player_animation.animation == "move_backward" ):
 		angle = 180;
+		instance.SpawnPos.y += 30
 	instance.direction = angle * 3.14/180;
 	instance.SpawnRot = angle * 3.14/180;
 	main.add_child.call_deferred(instance);
