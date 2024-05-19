@@ -96,7 +96,7 @@ script = ExtResource("1_al8ux")
 texture_filter = 1
 rotation = -3.14159
 sprite_frames = SubResource("SpriteFrames_mq8ci")
-frame_progress = 0.697152
+frame_progress = 0.319075
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)

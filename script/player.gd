@@ -14,6 +14,7 @@ func _physics_process(delta):
 		position -= velocity * delta;
 		
 func _process(delta):
+	set_text_life()
 	motion = Vector2.ZERO;
 	if Input.is_action_pressed("backward"):
 		$player_animation.animation = "move_backward";
@@ -36,6 +37,9 @@ func _process(delta):
 		
 	position += motion * delta;
 
+func set_text_life():
+	$life.text = str(Globals.player_life)
+	$text.text = "life remaining :"
 
 func _on_area_2d_body_entered(body):
 	if (body.name != "projectile"):
